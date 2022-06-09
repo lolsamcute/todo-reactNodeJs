@@ -1,0 +1,27 @@
+const mongoose = require("mongoose");
+
+
+module.exports = async () => {
+try{
+
+    const connectionParams = {
+        useNewUrlParser:true,
+        useCreateIndex:true,
+        useUnifiedTopology:true
+    };
+    await mongoose.connect(
+
+        "mongodb://",
+        connectionParams
+    );
+
+    console.log("Connected to Database.");
+
+
+}catch (error){
+
+    console.log("Could not connect to database", error)
+  
+}
+
+}
