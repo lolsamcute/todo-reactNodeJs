@@ -11,7 +11,7 @@ class App extends Tasks {
         return (
             <div className="App flex">
                 <Paper elevation={3} className="container">
-                    <div className="heading">ASSESMENT TO-DO</div>
+                    <div className="heading">ASSESSMENT TO-DO</div>
                     <form
                         onSubmit={this.handleSubmit}
                         className="flex"
@@ -32,7 +32,7 @@ class App extends Tasks {
                             variant="outlined"
                             type="submit"
                         >
-                            Add Todo
+                            Add
                         </Button>
                     </form>
                     <div>
@@ -59,11 +59,14 @@ class App extends Tasks {
                                     onClick={() => this.handleDelete(task._id)}
                                     color="secondary"
                                 >
-                                    Delete Todo
+                                    Delete
                                 </Button>
                             </Paper>
                         ))}
                     </div>
+
+
+                    Please connect the DB to Enjoy the CRUD Functions 
                 </Paper>
             </div>
         );
